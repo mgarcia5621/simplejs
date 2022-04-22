@@ -13,8 +13,13 @@ closeFace.addEventListener('click', () => {
 
 
 openFace.addEventListener('click', () => {
-    if(closeFace.classList.contains('closed')) {
+    if(closeFace.classList.contains('close')) {
         closeFace.classList.add('active');
         openFace.classList.remove('active');
     }
 });
+
+function monkeyToggle() {
+    let toggle = document.getElementById("active");
+    toggle.classList.toggle("close");
+  }
