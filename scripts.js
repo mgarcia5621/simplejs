@@ -8,18 +8,17 @@ closeFace.addEventListener('click', () => {
     if(openFace.classList.contains('open')) {
         openFace.classList.add('active');
         closeFace.classList.remove('active');
+        closeFace.classList.add('notActive');
+        openFace.classList.remove('notActive');
     }
 })
 
 
 openFace.addEventListener('click', () => {
-    if(closeFace.classList.contains('close')) {
+    if(closeFace.classList.contains('closed')) {
         closeFace.classList.add('active');
         openFace.classList.remove('active');
+        openFace.classList.add('notActive');
+        closeFace.classList.remove('notActive');
     }
 });
-
-function monkeyToggle() {
-    let toggle = document.getElementById("active");
-    toggle.classList.toggle("close");
-  }

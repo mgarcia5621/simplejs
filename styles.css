@@ -30,3 +30,7 @@ body {
 .active {
     display: block;
 }
+
+.notActive {
+    display: none;
+}
