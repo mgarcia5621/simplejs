@@ -22,3 +22,34 @@ openFace.addEventListener('click', () => {
         closeFace.classList.remove('notActive');
     }
 });
+
+
+const monkey = document.querySelector('#monkey');
+
+
+monkey.addEventListener('mouseenter', () => {
+    if(!monkey.classList.contains('hover')) {
+        monkey.classList.add('hover');
+    }
+})
+
+monkey.addEventListener('mouseleave', () => {
+    if(monkey.classList.contains('hover')) {
+        monkey.classList.remove('hover');
+    }
+})
+
+const monkeyopen = document.querySelector('#monkeyopen');
+
+
+monkeyopen.addEventListener('mouseenter', () => {
+    if(!monkeyopen.classList.contains('hover')) {
+        monkeyopen.classList.add('hover');
+    }
+})
+
+monkeyopen.addEventListener('mouseleave', () => {
+    if(monkeyopen.classList.contains('hover')) {
+        monkeyopen.classList.remove('hover');
+    }
+})
