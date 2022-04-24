@@ -9,11 +9,11 @@ let data = [
     },
     {
         name: 'Jonathan ',
-        age: '22 I think'
+        age: '22'
     },
     {
         name: 'Ron ',
-        age: '48 maybe'
+        age: '48'
     },
     {
         name: 'Ronney ',
@@ -21,7 +21,7 @@ let data = [
     },
     {
         name: 'Mom ',
-        age: '46 I think, she young'
+        age: '46'
     },
     
 ];
@@ -30,7 +30,7 @@ const info = document.querySelector('#info')
 
 let details = data.map(function(item) {
     return (
-        '<div>' + item.name + item.age + '</div>'
+        '<div>' + item.name + '' + 'is ' + item.age + ' years old' +  '</div>'
     )
 });
 
